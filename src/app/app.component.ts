@@ -7,7 +7,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'drag-n-drop';
+  title = 'components';
 
   toLearn = [
     'Kotlin',

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "drag-n-drop": {
+    "components": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/drag-n-drop",
+            "outputPath": "dist/components",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "drag-n-drop:build"
+            "browserTarget": "components:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "drag-n-drop:build:production"
+              "browserTarget": "components:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "drag-n-drop:build"
+            "browserTarget": "components:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "drag-n-drop:serve"
+            "devServerTarget": "components:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "drag-n-drop:serve:production"
+              "devServerTarget": "components:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "drag-n-drop"
+  "defaultProject": "components"
 }
