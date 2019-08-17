@@ -1,10 +1,10 @@
-<header></header>
+<header [component]="name"></header>
 <div class="row" cdkDropListGroup>
   <div class="col">
     <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)"
       [cdkDropListData]="toLearn">
       <div class="list-group-item font-weight-bold">To Learn</div>
-      <li class="list-group-item" cdkDrag *ngFor="let technology of toLearn">{{technology}}</li>
+      <li class="list-group-item movable" cdkDrag *ngFor="let technology of toLearn">{{technology}}</li>
     </ul>
   </div>
   <div class="col-2"></div>
@@ -12,7 +12,7 @@
     <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)"
       [cdkDropListData]="didLearn">
       <div class="list-group-item font-weight-bold">Did Learn</div>
-      <li class="list-group-item" cdkDrag *ngFor="let technology of didLearn">{{technology}}</li>
+      <li class="list-group-item movable" cdkDrag *ngFor="let technology of didLearn">{{technology}}</li>
     </ul>
   </div>
 </div>

@@ -8,6 +8,8 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class DragNDropComponent {
 
+  name = 'drag-n-drop';
+
   toLearn = [
     'Kotlin',
     'React',

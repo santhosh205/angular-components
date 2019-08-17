@@ -1,3 +1,3 @@
-# CDK components
+# components
 
-The project illustrates the use of angular-cdk to build your own components.
+The project illustrates the use of [angular-cdk](https://material.angular.io/cdk/categories) to build your own components.

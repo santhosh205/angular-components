@@ -2,7 +2,7 @@
   <h4>Below are components implemented using @angular/cdk</h4>
 </div>
 <div class="row">
-  <div class="col-3 text-center py-3">
-    <a [routerLink]="['/drag-n-drop']">drag-n-drop</a>
+  <div class="col-3 text-center py-3" *ngFor="let component of components">
+    <a [routerLink]="'/' + component">{{component}}</a>
   </div>
 </div>

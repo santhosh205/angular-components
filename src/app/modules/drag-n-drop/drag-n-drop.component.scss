@@ -1,0 +1,16 @@
+.list-group {
+  height: 295px;
+}
+
+.movable {
+  cursor: move;
+}
+
+.cdk-drag-preview {
+  border-radius: .25rem;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.25);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
